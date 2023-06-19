@@ -1,0 +1,4 @@
+1. "on" is event listener 
+2. when we send the data in url it convert data into buffer which is not readble and "on" which is event listener triger "data" where we merge the all data. when the buffer ends we trigger "end" in event listener which indicate that in  url data is ended after we "parse" the data. Which show the data again in Original data.
+3. Using spread operator we can change the content but it also don;t change the refernce completely it only update the content. It helps us dynamically to update the content. e.g.: `...Users[idx], ...obj`
+4. To delete the data we can use splice. to data particularly for deletion we can also use findIndex. `const idx = Users.findIndex(element => element.name.toLowerCase() === name.toLowerCase())` `Users.splice(idx, 1)`
